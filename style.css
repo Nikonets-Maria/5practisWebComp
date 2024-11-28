@@ -1,0 +1,35 @@
+body{
+  font-family: sans-serif;
+  background-color: rgb(248, 248, 248);
+}
+
+
+:host {
+    --background-color: #beedeb;
+    --text-color: #020455;
+    --font-size: 16px;
+
+  }
+  .container {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: var(--font-size);
+  }
+  .city {
+    text-align: center;
+  }
+  .city::before{
+    content: 'Погода в ';
+  }
+  .weather-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+
+  }
+  
+
+
+
